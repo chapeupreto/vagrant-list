@@ -2,7 +2,7 @@
 
 temp_file=/tmp/.vagrant-list.tmp
 
-clear && vagrant global-status --prune > "${temp_file}"
+clear && vagrant global-status --prune > "${temp_file}" 2> /dev/null
 
 num_lines=$(wc -l < "${temp_file}")
 
