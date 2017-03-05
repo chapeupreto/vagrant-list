@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+which -s vagrant
+if [[ $? -ne 0 ]]; then
+    echo -e "\n\e[91mSorry! vagrant was not found!\n"
+    exit 1
+fi
+
 temp_file=/tmp/.vagrant-list.tmp
 
 clear && vagrant global-status --prune > "${temp_file}" 2> /dev/null
