@@ -12,6 +12,7 @@ lists information about guest port mappings for all your [vagrant][1] projects.
 vagrant-list can be installed globally by doing the following steps:
 
 ```bash
+git clone https://github.com/chapeupreto/vagrant-list.git && cd vagrant-list
 chmod +x vagrant-list.sh
 mv vagrant-list.sh /usr/local/bin/vagrant-list
 ```
